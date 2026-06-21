@@ -1,0 +1,245 @@
+/* ================= BODY ================= */
+
+body{
+    margin:0;
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    background-image:url("./cafe.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    font-family: Georgia, serif;
+}
+
+
+/* ================= OVERLAY ================= */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    /* lighter overlay so image survives */
+    background:rgba(255,255,255,0.15);
+
+    z-index:-1;
+}
+
+
+/* ================= MAIN CONTENT ================= */
+
+#content{
+    flex:1;
+    text-align:center;
+    margin-top:30px;
+}
+
+
+/* ================= TITLES ================= */
+
+h1{
+    font-size:58px;
+
+    color:#3b2a1f;       /* dark brown */
+
+    text-shadow:1px 1px 4px rgba(255,255,255,0.2);
+
+    margin-bottom:20px;
+}
+
+h2{
+    color:#2f2018;
+
+    font-size:32px;
+
+    margin-bottom:20px;
+}
+
+p{
+    color:#2a1c14;
+
+    font-size:20px;
+
+    line-height:1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+
+    padding-top:20px;
+}
+
+
+/* ================= NAV ================= */
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+button{
+    padding:12px 20px;
+
+    margin:10px;
+
+    border:none;
+
+    background:#5c4033;
+
+    color:#f8f1e8;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:all 0.3s ease;
+}
+
+button:hover{
+    transform:scale(1.04);
+
+    background:#6f4c3d;
+}
+
+
+/* ================= CATEGORY ================= */
+
+.categories{
+    margin:25px;
+}
+
+
+/* ================= GENERAL CARD ================= */
+
+.card{
+    width:420px;
+
+    margin:50px auto;
+
+    padding:30px;
+
+    text-align:center;
+
+    background:rgba(255,248,240,0.55);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(120,90,70,0.2);
+
+    border-radius:20px;
+
+    color:#2f2018;
+
+    transition:all 0.35s ease;
+}
+
+.card:hover{
+    transform:scale(1.02);
+
+    box-shadow:0 8px 18px rgba(0,0,0,0.12);
+}
+
+
+/* ================= MENU DISPLAY ================= */
+
+.menu-display{
+    width:460px;
+
+    margin:auto;
+
+    padding:25px;
+
+    background:rgba(255,248,240,0.65);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:16px;
+
+    color:#2f2018;
+
+    border:1px solid rgba(120,90,70,0.15);
+}
+
+
+/* ================= ABOUT SECTION ================= */
+
+.about-para{
+    width:60%;
+
+    margin:auto;
+
+    padding:25px;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    background:rgba(255,248,240,0.72);
+
+    border-radius:15px;
+
+    color:#2f2018;
+
+    border:1px solid rgba(120,90,70,0.2);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+    position: fixed;
+
+    bottom: 15px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 8px 20px;
+
+    border-radius: 12px;
+
+   
+
+    background: rgba(50,35,25,0.65);
+
+    color: #f3d8b6;
+
+    backdrop-filter: blur(8px);
+    bottom: 8px;
+opacity: 0.85;
+font-size: 12px;
+}
+
+
+/* ================= RECEIPT/BILL PAGE ================= */
+
+.bill-card{
+    width:450px;
+
+    margin:60px auto;
+
+    padding:25px;
+
+    background:rgba(255,248,240,0.72);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:18px;
+
+    color:#2f2018;
+}
