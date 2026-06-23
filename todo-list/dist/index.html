@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- REMOVE THIS if webpack is handling CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>TODO</title>
+<script defer src="main.js"></script></head>
+
+<body>
+
+    <!-- MAIN APP CONTAINER -->
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <h1>TODO APPLICATION</h1>
+
+            <button id="open">
+                Add Task
+            </button>
+        </header>
+
+
+        <!-- LEFT SIDEBAR -->
+        <div id="tabs">
+
+            <button id="home-btn">
+                Home
+            </button>
+
+            <h2>PROJECTS</h2>
+
+            <button id="add-project">
+                Add Project
+            </button>
+
+            <!-- projects inserted here by JS -->
+            <div id="projectslist"></div>
+
+        </div>
+
+
+        <!-- RIGHT CONTENT AREA -->
+        <div id="content">
+
+            <!-- tasks inserted here by JS -->
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- TASK MODAL -->
+    <!-- ========================= -->
+
+    <div class="modal hidden">
+
+        <div class="modal-content">
+
+            <label for="task-name">
+                Task
+            </label>
+
+            <input
+                type="text"
+                id="task-name"
+                placeholder="Enter task name"
+                required
+            >
+
+
+            <label for="due-date">
+                Due Date
+            </label>
+
+            <input
+                type="date"
+                id="due-date"
+            >
+
+
+            <label for="description">
+                Description
+            </label>
+
+            <input
+                type="text"
+                id="description"
+            >
+
+
+            <label for="option">
+                Priority
+            </label>
+
+            <select id="option">
+
+                <option value="high">
+                    High
+                </option>
+
+                <option value="medium">
+                    Medium
+                </option>
+
+                <option value="low">
+                    Low
+                </option>
+
+            </select>
+
+
+            <button id="close">
+                Submit
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- PROJECT MODAL -->
+    <!-- ========================= -->
+
+    <div class="newproject hidden">
+
+        <div class="project-modal">
+
+            <label for="projectname">
+                Project Name
+            </label>
+
+            <input
+                id="projectname"
+                type="text"
+                placeholder="Enter project name"
+            >
+
+            <button id="addpro">
+                Submit
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
