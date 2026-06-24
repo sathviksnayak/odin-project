@@ -1,0 +1,28 @@
+{
+  "name": "wheatherapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --open",
+    "watch": "webpack --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "css-loader": "^7.1.4",
+    "dotenv-webpack": "^9.0.0",
+    "eslint": "^10.5.0",
+    "html-webpack-plugin": "^5.6.7",
+    "prettier": "^3.8.4",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.107.2",
+    "webpack-cli": "^7.0.3",
+    "webpack-dev-server": "^5.2.5"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
