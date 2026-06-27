@@ -1,0 +1,116 @@
+/* whole page */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121826;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+
+/* title + score area */
+
+.game-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.game-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.game-header p {
+  color: #b8b8b8;
+  margin-bottom: 20px;
+}
+
+
+/* score section */
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+/* card container */
+
+.container {
+  width: 90%;
+  margin: 30px auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+
+/* pokemon card */
+
+.card {
+  background-color: #2f7d4c;
+
+  border-radius: 15px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease;
+}
+
+
+/* hover */
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+
+/* image */
+
+.card img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+}
+
+
+/* pokemon name */
+
+.card h2 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+
+/* win screen */
+
+.win-screen {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.win-screen h1 {
+  font-size: 3rem;
+}
+
+.win-screen button {
+  margin-top: 20px;
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-size: 1rem;
+}
